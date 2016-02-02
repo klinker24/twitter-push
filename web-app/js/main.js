@@ -54,7 +54,7 @@ function subscribe() {
     subscribeButton.textContent = 'Unsubscribe';
     isSubscribed = true;
 
-    open("/write_subscription.php?subscription=" + subscriptionId);
+    open("/web-app/write_subscription.php?subscription=" + subscriptionId);
   });
 }
 
