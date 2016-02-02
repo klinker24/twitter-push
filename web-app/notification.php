@@ -1,7 +1,6 @@
 <?php
+include_once('subscription.php');
 $_authorization = "AIzaSyB46bQF9oL9QdOb48LWvbrBfvToik_tyRw";  // from the google developer console (API Key)
-$_subscriptionId = "dBjMTfz-FUo:APA91bG2OP3HLLALwsCJT6SfgfS4dRr3RdDQIrM3bMOPfvUU2Rtoq97nUOOI3WieewPT1RmH2gvaJiqFFsSADiLBkqjms_vo2c3VxtD1e-enIx43pkdFdQcETf2rj0uoCsrr5lWLgold";
-
 
 // Do not edit below this line.
 // ----------------------------
