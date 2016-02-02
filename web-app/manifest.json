@@ -1,4 +1,8 @@
 {
+  // Name the application whatever you would like, it makes no difference.
   "name": "Twitter Push Server",
+
+  // This is the "Project Number" that is on the main screen for your 
+  // Google Developer Console Project.
   "gcm_sender_id": "16436590842" // application id from google developer console
 }

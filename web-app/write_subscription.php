@@ -1,9 +1,9 @@
 <?php
-$myfile = fopen("subscription.json", "w") or die("Unable to open file!");
+$file = fopen("subscription.json", "w") or die("Unable to open file!");
 $txt = $txt = '{ "subscription":"' . $_GET['subscription'] . '" }';
 
-fwrite($myfile, $txt);
-fclose($myfile);
+fwrite($file, $txt);
+fclose($file);
 
-echo "Subscribed to notifications.";
+echo "Subscribed to notifications. You can close this window.";
 ?>

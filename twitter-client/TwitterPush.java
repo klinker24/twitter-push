@@ -212,8 +212,12 @@ public abstract class TwitterPush {
     };
 
     public void sendMessage(String title, String message, String icon, String url) throws IOException {
-        String arguements = "title=" + title + "&message=" + message + "&icon=" + icon + "&url=" + url;
-        String post = getWebHost() + "/web-app/notification.php?" + java.net.URLEncoder.encode(arguements, "UTF-8");
+        String arguements = "title=" + java.net.URLEncoder.encode(title, "UTF-8") + 
+                            "&message=" + java.net.URLEncoder.encode(message, "UTF-8") + 
+                            "&icon=" + java.net.URLEncoder.encode(icon, "UTF-8") + 
+                            "&url=" + java.net.URLEncoder.encode(url, "UTF-8");
+
+        String post = getWebHost() + "/web-app/notification.php?" + arguements;
         URL obj = new URL(post);
 
         System.out.println("POST to: " + post);
