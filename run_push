@@ -1,4 +1,0 @@
-#! /usr/bin/env bash
-cd web-app
-
-sudo python -m SimpleHTTPServer 8080
