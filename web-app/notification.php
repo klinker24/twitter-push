@@ -1,5 +1,5 @@
 <?php
-$string = file_get_contents("https://push-klinkerapps.rhcloud.com/web-app/subscription.json");
+$string = file_get_contents("/subscription.json");
 $_subscriptionId = json_decode($string, true)['subscription'];
 echo "json: " . $string;
 echo $_subscriptionId;
