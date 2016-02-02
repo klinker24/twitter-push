@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+cd web-app
+
+php -S localhost:8181
