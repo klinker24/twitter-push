@@ -1,0 +1,4 @@
+{
+  "name": "Twitter Push Server",
+  "gcm_sender_id": "16436590842" // application id from google developer console
+}

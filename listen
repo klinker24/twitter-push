@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+cd twitter-client
+
+javac -cp .:twitter4j-core.jar:twitter4j-stream.jar *.java
+java -cp .:twitter4j-core.jar:twitter4j-stream.jar TwitterPushRunner
