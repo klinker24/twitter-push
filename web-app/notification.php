@@ -1,5 +1,5 @@
 <?php
-include_once("config.php");
+include_once("../config.php");
 
 $string = file_get_contents($_web_host . "/web-app/subscription.json");
 $_subscriptionId = json_decode($string, true)['subscription'];
