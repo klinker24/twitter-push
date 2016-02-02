@@ -1,10 +1,8 @@
 <?php
-$string = file_get_contents("web-app/subscription.json");
+$string = file_get_contents($_web_host . "/web-app/subscription.json");
 $_subscriptionId = json_decode($string, true)['subscription'];
 echo "json: " . $string;
-echo $_subscriptionId;
 
-$_authorization = "AIzaSyB46bQF9oL9QdOb48LWvbrBfvToik_tyRw";  // from the google developer console (API Key)
 
 // Do not edit below this line.
 // ----------------------------
