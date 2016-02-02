@@ -5,8 +5,8 @@ public class UserListener extends TwitterPush {
     public static final String AUTH_TOKEN = "4850548903-iZdZsSr0nlsxgCeCZpLbSHzB9g7iZ1b1zOx6u72";
     public static final String SECRET_TOKEN = "rWPIHnZx0yKOji1siXMgKPzAguBMFjmMzYv6hxlCtCz5i";
 
-    public static final String WEB_HOST = "https://klinker24.github.io/twitter-push";     // No "/" at the end
-    public static final String TWITTER_SCREEN_NAME = "test_for_talon"; // No "@" symbol
+    public static final String WEB_HOST = "https://push-klinkerapps.rhcloud.com";       // No "/" at the end
+    public static final String TWITTER_SCREEN_NAME = "test_for_talon";                  // No "@" symbol
 
     // What do you want to be notified for:
     public static final boolean MENTION_NOTIFICATIONS = true;

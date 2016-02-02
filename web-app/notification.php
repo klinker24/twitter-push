@@ -6,7 +6,7 @@ $_subscriptionId = "dBjMTfz-FUo:APA91bG2OP3HLLALwsCJT6SfgfS4dRr3RdDQIrM3bMOPfvUU
 // Do not edit below this line.
 // ----------------------------
 $myfile = fopen("notification_data.json", "w") or die("Unable to open file!");
-$txt = '{ "data":{"title":"' . $_GET['title'] . '", "message":"' . $_GET['message'] . '", "icon":" '. $_GET['icon'] . '", "url":"'. $_GET['url'] .'"} }';
+$txt = '{ "data":{"title":"' . urldecode($_GET['title']) . '", "message":"' . urldecode($_GET['message']) . '", "icon":" '. urldecode($_GET['icon']) . '", "url":"'. urldecode($_GET['url']) .'"} }';
 fwrite($myfile, $txt);
 fclose($myfile);
 
