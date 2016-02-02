@@ -49,12 +49,12 @@ function subscribe() {
   reg.pushManager.subscribe({userVisibleOnly: true}).
   then(function(pushSubscription) {
     sub = pushSubscription;
-    subscriptionId = sub.endpoint.replace("https://android.googleapis.com/gcm/send/", "");
+    var subscriptionId = sub.endpoint.replace("https://android.googleapis.com/gcm/send/", "");
     console.log('Subscribed! Endpoint:', subscriptionId);
     subscribeButton.textContent = 'Unsubscribe';
     isSubscribed = true;
 
-    open("/write_subscription.php?subscription=" . subscriptionId);
+    open("/write_subscription.php?subscription=" + subscriptionId);
   });
 }
 
