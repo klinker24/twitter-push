@@ -49,7 +49,7 @@ function subscribe() {
   reg.pushManager.subscribe({userVisibleOnly: true}).
   then(function(pushSubscription) {
     sub = pushSubscription;
-    subscriptionId = str_replace("https://android.googleapis.com/gcm/send/", "", sub.endpoint);
+    subscriptionId = sub.endpoint.replace("https://android.googleapis.com/gcm/send/", "");
     console.log('Subscribed! Endpoint:', subscriptionId);
     subscribeButton.textContent = 'Unsubscribe';
     isSubscribed = true;
