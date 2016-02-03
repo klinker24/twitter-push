@@ -32,10 +32,10 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('push', function(event) {
   console.log('Push message', event);
-  console.log('location', event.sourceURL);
+  console.log('location ' + event.sourceURL);
 
   event.waitUntil(
-    fetch('/web-app/notification_data.json').then(function(response) {  
+    fetch('https://push-klinkerapps.rhcloud.com/web-app/notification_data.json').then(function(response) {  
         return response.json().then(function(notification) {  
           var title = notification.data.title;
           var message = notification.data.message;
