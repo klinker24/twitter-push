@@ -69,7 +69,7 @@ self.addEventListener('notificationclick', function(event) {
     })
     .then(function(windowClients) {
       if (clients.openWindow) {
-        return clients.openWindow("/redirect.php?url=" + url);
+        return clients.openWindow(url);
       }
     })
   );
