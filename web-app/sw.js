@@ -32,7 +32,6 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('push', function(event) {
   console.log('Push message', event);
-  console.log('location ' + event.sourceURL);
 
   event.waitUntil(
     fetch('notification_data.json').then(function(response) {  
