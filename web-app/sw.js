@@ -36,6 +36,7 @@ self.addEventListener('push', function(event) {
 
   event.waitUntil(
     fetch('https://push-klinkerapps.rhcloud.com/web-app/notification_data.json').then(function(response) {  
+        console.log(response.json());
         return response.json().then(function(notification) {  
           var title = notification.data.title;
           var message = notification.data.message;
