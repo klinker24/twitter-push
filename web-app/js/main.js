@@ -35,7 +35,8 @@ function subscribe() {
     subscribeButton.textContent = 'Unsubscribe';
     isSubscribed = true;
 
-    open("/web-app/write_subscription.php?subscription=" + subscriptionId);
+    var password = document.getElementById('sub_password').value;
+    open("/web-app/write_subscription.php?subscription=" + subscriptionId + "&password=" + password);
   });
 }
 
