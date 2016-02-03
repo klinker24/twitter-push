@@ -32,9 +32,10 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('push', function(event) {
   console.log('Push message', event);
+  console.log('location', window.location.href);
 
   event.waitUntil(
-    fetch('notification_data.json').then(function(response) {  
+    fetch('/web-app/notification_data.json').then(function(response) {  
         return response.json().then(function(notification) {  
           var title = notification.data.title;
           var message = notification.data.message;
@@ -69,7 +70,7 @@ self.addEventListener('notificationclick', function(event) {
     })
     .then(function(windowClients) {
       if (clients.openWindow) {
-        return clients.openWindow(url);
+        return clients.openWindow("/redirect.php?url=" + url);
       }
     })
   );
