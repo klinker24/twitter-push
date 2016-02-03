@@ -1,5 +1,7 @@
 # Twitter Push Notifications
 
+![image](https://raw.githubusercontent.com/klinker24/twitter-push/master/header.png)
+
 This project is for hosting your own Twitter push notification server. Tweets are streamed using Twitter's Streaming API and delivered to your device with Google Chrome's Push API.
 
 ## General Info and Project Structure
