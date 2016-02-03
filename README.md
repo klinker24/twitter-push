@@ -83,7 +83,7 @@ You should see the following text come up on your command prompt if you input yo
 
 If you want to check whether or not it is working, simply go onto Twitter and mention yourself (or wait for someone else to like your tweet or something similar). You will a URL come up on the command prompt.
 
-## Connecting to your phone.
+## Connecting to your phone
 
 Now is the easy part. Simply navigate to your website, wherever you set it up at, on your android phone.
 
